@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson03媒体查询的媒体功能.html</title>
+    <style>
+        /* min-device-width:在移动端和期望值一样，device：设备。他是相当于设备的宽度，当拖动来改变浏览器大小的时候，当前终端设备的宽度并不会变化，意味着媒体查询条件不会响应 */
+        
+
+        
+
+        /* 初始化样式 */
+        /* body {
+            background-color:red;
+        } */
+        /* 宽度大于720px */
+        /* @media screen and ( min-width: 720px ) {
+            body {
+                background-color: green;
+            }
+        } */
+        /* 宽度大于960px */
+        /* @media screen and ( min-width: 960px ) {
+            body {
+                background-color: blue;
+            }
+        } */
+
+
+        
+        /* ----------------------------对比-------------------------------- */
+
+        /* 初始化样式 */
+        body {
+            background-color:red;
+        }
+        /* 设备宽度大于720px */
+        @media screen and ( min-device-width: 720px ) {
+            body {
+                background-color: green;
+            }
+        }
+        /* 设备宽度大于960px */
+        @media screen and ( min-device-width: 960px ) {
+            body {
+                background-color: blue;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
