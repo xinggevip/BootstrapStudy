@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 如果是判断最小值(min-width),则从小到大写 */
+        /* 如果是判断最大值(max-width),则从大到小写 */
+        /******************************************
+        当判断最小的值，并且从小到大进行判断（当条件满足的时候）
+        1.向上兼容:如果设置了宽度更小的样式，默认这些样式也会传递到宽度更大的条件范围内
+        2.向下覆盖:宽度更大的样式会将前面宽度更小的样式覆盖
+        ******************************************/
+        body {
+            background-color: red;
+        }
+        @media screen and ( min-width: 768px ){
+            body {
+                background-color: green;
+            }
+        }
+        @media screen and ( min-width: 992px ){
+            body {
+                background-color: blue;
+            }
+        }
+        @media screen and ( min-width: 1200px ){
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
