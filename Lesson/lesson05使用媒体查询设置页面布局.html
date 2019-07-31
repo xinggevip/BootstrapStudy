@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson05使用媒体查询设置页面布局</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 100%;
+            background-color: #ccc;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .clearFloat::after,.clearFloat::before {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .box > div {
+                width: 100%;
+                height: 50px;
+                background-color: pink;
+                background-clip: content-box;
+                box-sizing: border-box;
+                padding: 5px;
+                line-height: 40px;
+                text-align: center;
+                float: left;
+        }
+        
+        @media screen and (min-width: 720px) {
+            .box > div {
+                width: 50%;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .box > div {
+                width: 33.33%;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .box > div {
+                width: 25%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        需求:
+                w < 720px => 每一行放置一个子元素  100%;
+                w < 960px => 每一行放置两个子元素  50%;
+                w < 1200px => 每一行放置三个子元素 33%;
+                w > 1200px => 每个元素放置四个子元素 25%;
+     -->
+    <div class="box clearFloat">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
