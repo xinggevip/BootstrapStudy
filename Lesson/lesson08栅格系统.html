@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 默认使用IE最高版本 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 适配移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.min.js"></script>
+    <style>
+        /* 
+            .container
+            w: >= 1200 lg 1170
+            w: >= 992 md 970
+            w: >= 768 sm 750
+            w: < 768 xs 100%
+         */
+         .container {
+             height: 200px;
+             background-color: #ccc;
+         }
+         .container > .row {
+             height: 100%;
+         }
+         .container > .row > div {
+             height: 100%;
+             box-sizing: border-box;
+             border: 1px solid #333;
+         }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+                  <h3>
+                      栅格系统就是描述设置 子元素在 指定屏幕下 占据当前屏幕默认12等份中的n(1-12)等份
+                  </h3>
+                  <p><span style="color:red">注意：</span>栅格系统采用流布局，元素从左到右，从上到下布局，媒体查询向上兼容，向下合并</p>
+                  <ol>
+                      <li>先添栅格容器.container / .container-fluid</li>
+                      <li>在容器添加row</li>
+                      <li>在row添加子元素，设置栅格样式</li>
+                      <li>在子元素添加具体内容</li>
+                  </ol>
+              </div>
+          </div>
+          <div class="row">
+              <!-- class="col-xs-4":设置当前div在xs屏幕中占据当前屏幕12等分中的4等分 -->
+              <div class="col-xs-4"></div>
+              <div class="col-xs-4"></div>
+              <div class="col-xs-4"></div>
+
+          </div>
+          <div class="row">
+              <!-- 
+                需求：
+                    xs:占12等份
+                    sm:占6等份
+                    md:占4等份
+                    lg:占3等份
+               -->
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"></div>
+          </div>
+      </div>
+    
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script> -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script> -->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
