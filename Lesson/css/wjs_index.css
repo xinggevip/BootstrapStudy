@@ -43,6 +43,9 @@
   z-index: 10;
 }
 /* 重写导航样式 */
+.wjs_nav {
+  margin-bottom: 0;
+}
 .wjs_nav .navbar-brand {
   height: 80px;
   line-height: 50px;
@@ -73,4 +76,23 @@
 .wjs_nav .navbar-nav .active > a:focus {
   background-color: transparent;
   border-bottom: 2px solid #e92322;
+}
+/* 轮播图 */
+/* 移动端 */
+.mobileImg {
+  width: 100%;
+  display: block;
+}
+.mobileImg > img {
+  width: 100%;
+  display: block;
+}
+/* pc端 */
+.pcImg {
+  width: 100%;
+  height: 310px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
