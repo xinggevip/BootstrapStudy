@@ -109,3 +109,26 @@
 .wjs_info .row > div > a:hover {
   color: #e92322;
 }
+/* 预约块 */
+.wjs_reverse {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_reverse .wjs_icon {
+  font-size: 18px;
+}
+.wjs_reverse .col-sm-9 a:nth-last-child(2):hover {
+  color: #e92322;
+}
+.wjs_reverse .col-sm-9 a:nth-last-child(1) {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.wjs_reverse .col-sm-3 {
+  text-align: right;
+}
+.wjs_reverse .col-sm-3 a:nth-last-child(1):hover {
+  color: #e92322;
+}

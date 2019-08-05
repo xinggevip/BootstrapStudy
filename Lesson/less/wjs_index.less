@@ -119,3 +119,28 @@
         }
     }
 }
+/* 预约块 */
+.wjs_reverse {
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .wjs_icon {
+        font-size: 18px;
+    }
+    .col-sm-9 {
+        a:nth-last-child(2):hover {
+            color: @baseColor;
+        }
+        a:nth-last-child(1) {
+            color: @baseColor;
+            border-bottom: 1px dashed @baseColor;
+        }
+    }
+    .col-sm-3 {
+        text-align: right;
+        a:nth-last-child(1):hover {
+            color: @baseColor;
+        }
+    }
+}
