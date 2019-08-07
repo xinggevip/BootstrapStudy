@@ -339,3 +339,29 @@
   list-style-type: none;
   line-height: 70px;
 }
+/*  合作快*/
+.wjs_parter {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+.wjs_parter h3 {
+  text-align: center;
+}
+.wjs_parter ul {
+  display: inline-block;
+  list-style-type: none;
+}
+.wjs_parter ul::before,
+.wjs_parter ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wjs_parter ul > li {
+  float: left;
+  padding: 0 20px;
+}
+.wjs_parter ul > li > a {
+  font-size: 80px;
+}
