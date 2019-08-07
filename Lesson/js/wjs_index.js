@@ -1,4 +1,6 @@
 $(function (){
+    // 初始化工具提示插件
+    $('[data-toggle="tooltip"]').tooltip();
     $(window).on("resize",function (){
         // 获取item
         var items = $(".carousel-inner .item");
@@ -34,6 +36,23 @@ $(function (){
         $('.carousel').carousel('prev')
     });
     
+    // 获取原始导航项的宽度
+    var ul = $(".wjs_product .nav-tabs");
+    var lis = ul.find("li");
+    // console.log(lis);
+    var totalWidth = 0;
+    lis.each(function (index,ele){
+        // console.log(index, ele)
+        totalWidth = totalWidth + $(ele).outerWidth(true);
+    })
+    // console.log(totalWidth);
+    ul.width(totalWidth);
+
+    // 启用tab导航滑动插件
+    var myScroll = new IScroll('.tabs_parent',{
+        scrollX:true,
+        scrollY:false
+    });
     
 
 
