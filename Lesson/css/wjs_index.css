@@ -138,6 +138,9 @@
   padding: 20px;
   background-color: #eee;
 }
+.wjs_product .col-xs-12 {
+  overflow: hidden;
+}
 .wjs_product .nav-tabs > li {
   margin-top: 0;
   padding: 0 15px;
@@ -255,4 +258,84 @@
 .wjs_product .wjs_pBox .wjs_pRight::after {
   bottom: -5px;
   box-shadow: 0px 1px 1px #ddd inset;
+}
+/* 新闻块 */
+.wjs_news {
+  padding: 20px;
+}
+.wjs_news .wjs_news_Title {
+  font-size: 25px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+.wjs_news .wjs_news_Title::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  right: -8px;
+  bottom: -4px;
+}
+.wjs_news .nav-tabs {
+  border: none;
+  position: relative;
+  padding-left: 15px;
+}
+.wjs_news .nav-tabs > .wjs_news_line {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 1px dashed #e92322;
+  top: 0px;
+  left: 45px;
+}
+.wjs_news .nav-tabs > li > a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.wjs_news .nav-tabs > li > a:hover,
+.wjs_news .nav-tabs > li > a:focus {
+  background-color: #e92322;
+}
+.wjs_news .nav-tabs > li > a > span {
+  color: white;
+  font-size: 25px;
+  line-height: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wjs_news .nav-tabs > li {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wjs_news .nav-tabs > li {
+    width: 25%;
+  }
+}
+.wjs_news .nav-tabs > li:last-of-type > a {
+  margin-bottom: 0px;
+}
+.wjs_news .nav-tabs > li.active > a,
+.wjs_news .nav-tabs > li.active > a:hover,
+.wjs_news .nav-tabs > li.active > a:focus {
+  border: none;
+  background-color: #e92322;
+}
+.wjs_news .tab-content {
+  padding-left: 15px;
+}
+.wjs_news .wjs_news_list > li {
+  list-style-type: none;
+  line-height: 70px;
 }
