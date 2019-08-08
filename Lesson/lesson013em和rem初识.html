@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>em和rem</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .box {
+            /* em是一种长度单位，他是参照当前元素得字号，
+            如果没有设置，则参照父容器或者当前浏览器得默认字号 */
+            width: 10em;
+            height: 10em;
+            background-color: red;
+            font-size: 12px;
+        }
+        .parent {
+            /* rem是css3新增得一种长度单位，他是参照根元素(html)得字号 */
+            width: 10rem;   /* width:10 * 20px = 200px*/
+            height: 10rem;  /* height:10 * 20px = 200px */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        种瓜得瓜，种豆得豆
+    </div>
+    <div class="parent">
+        种瓜得瓜，种豆得豆
+    </div>
+</body>
+</html>

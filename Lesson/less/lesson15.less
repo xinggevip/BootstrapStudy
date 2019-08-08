@@ -1,0 +1,51 @@
+/* 导入其他的less文件 */
+@import 'mobilebase.less';
+@import '//at.alicdn.com/t/font_1340675_qtnq1f2lqap.css';
+.menu {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: orange;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    >a {
+        padding-left: 0.5rem;
+        font-weight: bold;
+        color: white;
+    }
+}
+.title {
+    padding: 0.75rem;
+    &::before,&::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    >a {
+        display: block;
+        float: left;
+        font-weight: bold;
+    }
+    >span {
+        display: block;
+        float: right;
+        color: #ccc;
+    }
+}
+.item {
+    text-align: center;
+    background-color: white;
+    margin: 0 0.75rem;
+    padding: 1rem 0;
+    border: 3/32rem dashed #ccc;
+    >a {
+        color: #c3c2c4;
+        text-align: center;
+        >span:first-of-type {
+            font-size: 4rem;
+        }
+        >span:last-of-type {
+            display: block;
+        }
+    }
+
+}

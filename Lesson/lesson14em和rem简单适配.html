@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson14em和rem简单适配</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /*  灵异bug终于被我逮住了
+            设备的真正宽度是带小数点的比如414.4px，
+            带上device可以填写整数414px,最好每个都加上device，
+            因为有的宽度的带小数点，如果不带小数点的话则查询不到,
+            他tm的，此规则仅适用于谷歌浏览器，火狐浏览器失效
+            火狐加上device也要带上小数点才行，谷歌加上小数点又不行要疯了
+
+        */
+        @media screen and (device-width: 320px) {
+            html {
+                font-size: 16px;
+                background: yellow;
+            }
+        }
+        @media screen and (device-width: 375px) {
+            html {
+                font-size: 18.75px;
+                background: yellow;
+            }
+        }
+        @media screen and (device-width: 384px) {
+            html {
+                font-size: 19.2px;
+                background: yellow;
+            }
+        }
+        @media screen and (device-width: 414px) {
+            html {
+                font-size: 20.7px;
+                background: yellow;
+            }
+        }
+        .box {
+            width: 10rem;
+            height: 10rem;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
